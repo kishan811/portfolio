@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kishan Shankar Singhal | Senior Data Engineer & AI Platform Architect</title>
+  <meta name="description" content="DataFlix: The interactive portfolio of Kishan Shankar Singhal — Senior Data Engineer & AI Platform Architect (IIIT Hyderabad M.Tech CSE, Tier-1). Specializing in TB-scale streaming pipelines, BigQuery slot autoscaling, live client DW zero-migration BI engines, and Vertex AI microservices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="netflix-dark">
+
+  <!-- Navigation Drawer (3-Line Menu) -->
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop"></div>
+  <aside class="nav-drawer" id="nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="brand-main">KISHAN</span>
+        <span class="brand-sub">AI & DATA PLATFORMS</span>
+      </div>
+      <button class="drawer-close-btn" id="btn-drawer-close" aria-label="Close Menu">✕</button>
+    </div>
+
+    <div class="drawer-content">
+      <div class="drawer-section">
+        <span class="drawer-section-title">ALL SECTIONS</span>
+        <ul class="drawer-links">
+          <li><a href="#hero" class="drawer-link"><span class="drawer-icon">🏠</span> Home (Spotlight)</a></li>
+          <li><a href="#work-projects" class="drawer-link"><span class="drawer-icon">🚀</span> Work & Experience</a></li>
+          <li><a href="#architecture" class="drawer-link"><span class="drawer-icon">📐</span> Architecture & System Design</a></li>
+          <li><a href="#education" class="drawer-link"><span class="drawer-icon">🎓</span> Academic Pedigree (IIIT-H)</a></li>
+          <li><a href="#ai-lab" class="drawer-link"><span class="drawer-icon">🧪</span> The AI Studio Simulator</a></li>
+          <li><a href="#episodes" class="drawer-link"><span class="drawer-icon">🎬</span> Career Seasons & Timeline</a></li>
+          <li><a href="#tech-stack" class="drawer-link"><span class="drawer-icon">🛠️</span> Data Engineering Arsenal</a></li>
+          <li><a href="#academic-projects" class="drawer-link"><span class="drawer-icon">📂</span> Academic Archive & Research</a></li>
+          <li><a href="#hobbies" class="drawer-link"><span class="drawer-icon">🌟</span> Hobbies & Passions</a></li>
+          <li><a href="#my-list-section" class="drawer-link"><span class="drawer-icon">🔖</span> My List Saved Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-section">
+        <span class="drawer-section-title">DIRECT CONTACT</span>
+        <div class="drawer-contact-box">
+          <a href="tel:+918871207064" class="drawer-contact-item">📱 (+91) 8871207064</a>
+          <a href="mailto:singhal.kishan.11@gmail.com" class="drawer-contact-item">✉️ singhal.kishan.11@gmail.com</a>
+          <a href="https://linkedin.com/in/kishan-shankar-singhal" target="_blank" rel="noopener" class="drawer-contact-item">💼 LinkedIn Profile</a>
+          <a href="https://github.com/kishan811" target="_blank" rel="noopener" class="drawer-contact-item">🐙 GitHub Profile</a>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <a href="Kishan_Singhal_DE.pdf" target="_blank" download="Kishan_Singhal_Senior_Data_Engineer.pdf" class="btn btn-play drawer-resume-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Official Resume PDF</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       1. NETFLIX HEADER / NAVIGATION (Direct launch)
+       ========================================================================= -->
+<header class="netflix-nav" id="main-nav">
+    <div class="nav-left">
+      <!-- 3-Line Hamburger Menu Button -->
+      <button class="nav-icon-btn hamburger-btn" id="btn-menu-toggle" aria-label="Open Navigation Menu" title="Browse All Sections">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="#hero" class="brand-logo" aria-label="Kishan Shankar Singhal Home">
+        <span class="brand-main">KISHAN</span>
+        <span class="brand-sub">AI & DATA PLATFORMS</span>
+      </a>
+
+      <!-- Clean primary navigation links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#work-projects">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#ai-lab">AI Lab</a></li>
+        <li><a href="#my-list-section" id="nav-my-list-link">My List <span class="badge-count" id="my-list-count">0</span></a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <!-- Search Input -->
+      <div class="nav-search-container" id="nav-search-container">
+        <button class="nav-icon-btn" id="btn-search-toggle" title="Search all projects & skills" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <input type="text" id="site-search-input" placeholder="Search BigQuery, IIIT-H, ETL..." aria-label="Search content">
+      </div>
+
+      <!-- Resume PDF Direct Download (Unconstrained, fully visible) -->
+      <a href="Kishan_Singhal_DE.pdf" target="_blank" download="Kishan_Singhal_Senior_Data_Engineer.pdf" class="btn-resume-nav" title="Download Official PDF Resume">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Resume PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO BILLBOARD (Spotlight on Enterprise Work Experience Projects)
+       ========================================================================= -->
+  <section class="hero-billboard" id="hero">
+    <div class="billboard-backdrop">
+      <div class="grid-matrix-effect"></div>
+      <div class="radial-vignette"></div>
+    </div>
+
+<div class="billboard-content">
+      <!-- Enterprise Spotlight Navigation Tabs (IN ONE SINGLE LINE ACROSS THE BILLBOARD) -->
+      <div class="hero-spotlight-nav-wrapper">
+        <span class="spotlight-label">ENTERPRISE SPOTLIGHT:</span>
+        <div class="hero-spotlight-nav">
+          <button class="spotlight-tab active" data-spotlight="data-studio">Data Studio BI & Live Connectors</button>
+          <button class="spotlight-tab" data-spotlight="xpo-telematics">TB-Scale GPS Telematics to GBQ</button>
+          <button class="spotlight-tab" data-spotlight="bigquery-cost">BigQuery $90K Slot ROI</button>
+          <button class="spotlight-tab" data-spotlight="nl2sql-engine">Enterprise NL2SQL</button>
+          <button class="spotlight-tab" data-spotlight="etl-pipelines">100+ End-to-End ETL/ELT</button>
+        </div>
+      </div>
+
+      <!-- Two-Column Hero Showcase Grid (Eliminates empty black space on the right) -->
+      <div class="hero-grid-layout">
+        <!-- Left Column: Story, Title, Highlights, Action Buttons -->
+        <div class="hero-left-column">
+          <div class="billboard-badge">
+            <span class="badge-n">N</span>
+            <div class="badge-text-stack">
+              <span class="badge-text" id="hero-badge-text">KISHAN SHANKAR SINGHAL • 6.6 YEARS WORK EXPERIENCE</span>
+              <span class="badge-role-subline">SENIOR DATA ENGINEER & AI ARCHITECT (IIIT HYDERABAD)</span>
+            </div>
+          </div>
+
+          <div class="hero-master-headline">
+            <h2 class="master-hero-slogan">Architecting TB-Scale Streaming Pipelines & Zero-Migration BI Platforms</h2>
+          </div>
+
+          <h1 class="billboard-title" id="hero-title">DATA STUDIO</h1>
+          <p class="billboard-subtitle" id="hero-subtitle">In-House BI Engine with Live Client DW Connectors & Secret Manager Auth (Zero Migration)</p>
+
+          <div class="billboard-meta" id="hero-meta">
+            <span class="meta-match">99.8% Match</span>
+            <span class="meta-rating">PRODUCTION</span>
+            <span class="meta-duration">GCP Cloud Run + BigQuery</span>
+            <span class="meta-quality">LOOKER STUDIO EQUIVALENT</span>
+            <span class="meta-tag">Live Client DW Connectors</span>
+          </div>
+
+          <p class="billboard-description" id="hero-description">
+            Architected an enterprise Looker Studio-equivalent BI engine enabling clients to connect live data sources directly on the client side. Credentials are stored securely in GCP Secret Manager, querying their data warehouses directly with <strong>zero data migration required onto our servers</strong>. Unified 7 fragmented Cloud Run functions into 1 BigQuery-configured AI engine with a 12-column drag-and-drop report builder.
+          </p>
+
+          <div class="billboard-highlights" id="hero-highlights">
+            <div class="highlight-chip">🔒 <strong>Zero Migration</strong> Direct Client DW Connection via Secret Manager</div>
+            <div class="highlight-chip">📊 <strong>In-House BI</strong> Looker Studio Equivalent with 12-Col Grid</div>
+            <div class="highlight-chip">⚡ <strong>-85%</strong> Microservice Sprawl (7 &rarr; 1 Cloud Run)</div>
+            <div class="highlight-chip">📉 <strong>-70%</strong> Manual BI Requests</div>
+          </div>
+
+          <div class="billboard-actions">
+            <button class="btn btn-play" id="btn-hero-primary-action">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span id="hero-play-label">Try AI Studio Live</span>
+            </button>
+            <button class="btn btn-info" id="btn-hero-info">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="11" x2="12" y2="17"></line>
+                <circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"></circle>
+              </svg>
+              <span>Architecture & Deep Dive</span>
+            </button>
+            <button class="btn btn-secondary-action" id="btn-hero-list" title="Add to My List">
+              <span class="btn-icon-wrapper" id="hero-list-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+              <span id="hero-list-label">My List</span>
+            </button>
+            <a href="Kishan_Singhal_DE.pdf" target="_blank" download="Kishan_Singhal_Senior_Data_Engineer.pdf" class="btn btn-secondary-action" id="btn-hero-resume" title="Download Official Resume PDF">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Live Cinematic Telemetry & Architecture Showcase Card -->
+        <div class="hero-right-showcase" id="hero-showcase-panel">
+          <div class="showcase-card">
+            <div class="showcase-header">
+              <div class="showcase-live-badge"><span class="pulse-green-dot"></span> LIVE ARCHITECTURE STREAM</div>
+              <div class="showcase-tech-tag">GCP CLOUD RUN • BIGQUERY</div>
+            </div>
+            <div class="showcase-body">
+              <div class="hud-flow">
+                <div class="hud-box">
+                  <span class="hud-title">CLIENT DATA WAREHOUSE (PUSH-DOWN)</span>
+                  <span class="hud-sub">Snowflake • BigQuery • Postgres (Zero Migration)</span>
+                </div>
+                <div class="hud-arrow">&harr; <span class="hud-arrow-label">GCP Secret Manager Encrypted Auth</span> &harr;</div>
+                <div class="hud-box active-glow">
+                  <span class="hud-title">UNIFIED INSIGHTS ENGINE (CLOUD RUN)</span>
+                  <span class="hud-sub">Config-driven: SQL queries & Gemini prompts managed in BigQuery</span>
+                </div>
+                <div class="hud-arrow">&darr; <span class="hud-arrow-label">12-Column Responsive CSS Grid</span> &darr;</div>
+                <div class="hud-box">
+                  <span class="hud-title">IN-HOUSE REPORT BUILDER</span>
+                  <span class="hud-sub">Looker Studio Equivalent • Scorecards, Tables & Metric Tiles</span>
+                </div>
+              </div>
+              <div class="hud-stats-grid">
+                <div class="hud-stat-item">
+                  <div class="hud-stat-val">0 MB</div>
+                  <div class="hud-stat-lbl">Data Migration</div>
+                </div>
+                <div class="hud-stat-item">
+                  <div class="hud-stat-val">85%</div>
+                  <div class="hud-stat-lbl">Sprawl Reduction</div>
+                </div>
+                <div class="hud-stat-item">
+                  <div class="hud-stat-val">70%</div>
+                  <div class="hud-stat-lbl">BI Automation</div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-footer">
+              <span class="telemetry-ping"><span class="ping-dot"></span> Latency: 124ms</span>
+              <span class="telemetry-status">Production Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. NETFLIX ROWS (Prioritizing Work Experience & Data Engineering)
+       ========================================================================= -->
+  <main class="netflix-rows-container">
+
+    <!-- Row 1: PRODUCTION WORK EXPERIENCE BLOCKBUSTERS (TOP ROW) -->
+    <section class="shelf-row" id="work-projects">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Enterprise Production Blockbusters (Work Experience)</h2>
+        <span class="shelf-subtitle">High-scale data platforms, TB-scale pipelines, cloud cost savings & in-house engines</span>
+      </div>
+      <div class="shelf-carousel-wrapper">
+        <button class="carousel-control prev" data-carousel="carousel-work" aria-label="Previous">❮</button>
+        <div class="shelf-carousel" id="carousel-work">
+
+          <!-- 1. Data Studio -->
+          <div class="movie-card card-wide" data-modal="data-studio" data-tags="work ility bi bigquery secret-manager cloud-run live-connectors">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-ai"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">FLAGSHIP BI PLATFORM • ILITY</span>
+                <h3 class="card-title">Data Studio — Looker Studio Equivalent</h3>
+                <p class="card-preview-text">Live client DW connectors via Secret Manager (zero data migration) + 12-col grid & AI engine</p>
+                <div class="episode-metric-chips">
+                  <span>Zero Migration</span>
+                  <span>Secret Manager Auth</span>
+                  <span>7-to-1 Cloud Run</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="data-studio">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">Data Studio: Live DW Connectors & BI Engine</h4>
+              <div class="hover-meta">
+                <span class="match-score">99.8% Match</span>
+                <span class="age-badge">PROD</span>
+                <span class="tech-pill">GCP Cloud Run + BigQuery</span>
+              </div>
+              <p class="hover-desc">Connects client data sources sitting on their side via credentials stored in GCP Secret Manager. Queries directly against client DW with zero migration needed. Includes 12-col report builder & Gemini AI insights.</p>
+              <div class="hover-tags"><span>Secret Manager</span><span>BigQuery</span><span>Zero Migration</span><span>Angular</span></div>
+            </div>
+          </div>
+
+          <!-- 2. TB-Scale Telematics & GPS Ingestion to GBQ -->
+          <div class="movie-card card-wide" data-modal="xpo-telematics" data-tags="work xpo dataflow scala streaming batch bigquery telematics">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-arch3"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">TB-SCALE STREAMING & BATCH • XPO</span>
+                <h3 class="card-title">GPS Telematics API to GBQ Pipeline</h3>
+                <p class="card-preview-text">Streaming & batch ingestion from REST APIs to Google BigQuery handling 10,000+ vehicles</p>
+                <div class="episode-metric-chips">
+                  <span>TB-Scale Data</span>
+                  <span>Batch & Stream</span>
+                  <span>Dataflow & Scala</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="xpo-telematics">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">TB-Scale GPS Telematics to GBQ</h4>
+              <div class="hover-meta">
+                <span class="match-score">99% Match</span>
+                <span class="age-badge">ENTERPRISE</span>
+                <span class="tech-pill">GCP Dataflow + Scala</span>
+              </div>
+              <p class="hover-desc">Architected end-to-end streaming and batch pipelines harvesting real-time GPS telemetry from REST APIs into Google BigQuery. Handled TBs of high-frequency vehicle events with +40% efficiency boost.</p>
+              <div class="hover-tags"><span>Dataflow</span><span>Scala</span><span>Google BigQuery</span><span>Pub/Sub</span></div>
+            </div>
+          </div>
+
+          <!-- 3. BigQuery Slot Autoscaling ($90K ROI) -->
+          <div class="movie-card" data-modal="bigquery-cost" data-tags="work xpo cost-optimization bigquery slot-autoscaling">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-arch2"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">COST GOVERNANCE • XPO</span>
+                <h3 class="card-title">BigQuery Slot Autoscaling</h3>
+                <p class="card-preview-text">Analyzed slot consumption curves to cut overcapacity and save $80K–$90K annually</p>
+                <div class="card-stats"><span>$90K Annual Savings</span> • <span>-60% Latency</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="bigquery-cost">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">BigQuery Slot Autoscaling ($90K ROI)</h4>
+              <div class="hover-meta"><span class="match-score">99% Match</span><span class="tech-pill">$90K Savings/yr</span></div>
+              <p class="hover-desc">Dynamic reservation tuning, partition pruning, and indexing rewrites across multi-terabyte data warehouses.</p>
+              <div class="hover-tags"><span>BigQuery</span><span>Slot Autoscaling</span><span>Cost Tuning</span></div>
+            </div>
+          </div>
+
+          <!-- 4. Enterprise NL2SQL Engine -->
+          <div class="movie-card" data-modal="nl2sql-engine" data-tags="work ility ai llm bigquery sql">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-sql"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">ENTERPRISE AI • ILITY</span>
+                <h3 class="card-title">NL2SQL BigQuery Engine</h3>
+                <p class="card-preview-text">Translates conversational English into optimized BigQuery SQL for business teams</p>
+                <div class="card-stats"><span>85%+ Accuracy</span> • <span>-30% Compute Cost</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="nl2sql-engine">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">NL2SQL BigQuery Engine</h4>
+              <div class="hover-meta"><span class="match-score">99% Match</span><span class="tech-pill">85%+ Accuracy</span></div>
+              <p class="hover-desc">LLM pipeline with schema injection, partition pruning validation, and compute cost safety limits.</p>
+              <div class="hover-tags"><span>LLM</span><span>BigQuery</span><span>Prompt Eng</span></div>
+            </div>
+          </div>
+
+          <!-- 5. 100+ End-to-End ETL/ELT Pipelines -->
+          <div class="movie-card" data-modal="etl-pipelines" data-tags="work xpo etl elt airflow pyspark informatica">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-season2"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">PIPELINE ARCHITECTURE • XPO</span>
+                <h3 class="card-title">100+ Production ETL/ELT</h3>
+                <p class="card-preview-text">Low-latency, fault-tolerant data pipelines integrating REST APIs, PySpark, Airflow & GCP</p>
+                <div class="card-stats"><span>-50% Processing Time</span> • <span>SLA 99.9%</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="etl-pipelines">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">100+ Enterprise ETL/ELT Pipelines</h4>
+              <div class="hover-meta"><span class="match-score">99% Match</span><span class="tech-pill">Airflow + PySpark</span></div>
+              <p class="hover-desc">Built and maintained Staging, Data Lake, and Data Warehouse architectures with automated alerting.</p>
+              <div class="hover-tags"><span>ETL/ELT</span><span>Airflow</span><span>PySpark</span><span>GCP</span></div>
+            </div>
+          </div>
+
+          <!-- 6. Netezza to BigQuery Migration -->
+          <div class="movie-card" data-modal="netezza-migration" data-tags="work xpo migration netezza bigquery">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-season1"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">CLOUD MIGRATION • XPO</span>
+                <h3 class="card-title">Netezza to BigQuery</h3>
+                <p class="card-preview-text">Cloud modernization of 200+ tables cutting maintenance costs by 45%</p>
+                <div class="card-stats"><span>-45% Maint. Cost</span> • <span>-60% Server Load</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="netezza-migration">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">Netezza to Google BigQuery Migration</h4>
+              <div class="hover-meta"><span class="match-score">98% Match</span><span class="tech-pill">Cloud DW Modernization</span></div>
+              <p class="hover-desc">Migrated 200+ production tables from legacy Netezza to BigQuery with zero data loss.</p>
+              <div class="hover-tags"><span>BigQuery</span><span>Migration</span><span>ETL</span></div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control next" data-carousel="carousel-work" aria-label="Next">❯</button>
+      </div>
+    </section>
+
+    <!-- Row 2: CAREER SEASONS (EXPERIENCE TIMELINE) -->
+    <section class="shelf-row" id="episodes">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Career Episodes (Experience Timeline)</h2>
+        <span class="shelf-subtitle">Senior Data Engineer with 6+ years of production cloud leadership</span>
+      </div>
+      <div class="shelf-carousel-wrapper">
+        <button class="carousel-control prev" data-carousel="carousel-episodes" aria-label="Previous">❮</button>
+        <div class="shelf-carousel" id="carousel-episodes">
+
+          <!-- Season 3: Ility -->
+          <div class="movie-card card-wide" data-modal="exp-ility" data-tags="experience ility senior gcp bigquery">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-season3"></div>
+              <div class="card-art-content">
+                <div class="episode-tag">SEASON 3 • JUNE 2026 – PRESENT</div>
+                <h3 class="card-title">Senior Data Engineer @ Ility</h3>
+                <p class="card-preview-text">Pune, India • Built in-house Looker Studio-equivalent BI platform & live client DW connectors</p>
+                <div class="episode-metric-chips">
+                  <span>-70% Manual BI</span>
+                  <span>5x Report Speed</span>
+                  <span>Zero Migration</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="exp-ility">+</button>
+              </div>
+              <h4 class="hover-title">Ility — Senior Data Engineer</h4>
+              <p class="hover-desc">Architected self-service BI platform with client-side live DW connectors (Secret Manager), NL2SQL engine, BigQuery query optimization, and Kubernetes containerized services.</p>
+            </div>
+          </div>
+
+          <!-- Season 2: XPO DE-2 -->
+          <div class="movie-card card-wide" data-modal="exp-xpo-2" data-tags="experience xpo bigquery airflow pyspark telematics">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-season2"></div>
+              <div class="card-art-content">
+                <div class="episode-tag">SEASON 2 • JULY 2022 – JUNE 2026</div>
+                <h3 class="card-title">Data Engineer 2 @ XPO</h3>
+                <p class="card-preview-text">Pune, India • TB-scale GPS streaming to GBQ, $90K slot savings, 100+ ETL pipelines</p>
+                <div class="episode-metric-chips">
+                  <span>$80K–$90K Saved/yr</span>
+                  <span>100+ Pipelines</span>
+                  <span>10,000+ Vehicles</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="exp-xpo-2">+</button>
+              </div>
+              <h4 class="hover-title">XPO — Data Engineer 2</h4>
+              <p class="hover-desc">Architected TB-scale GPS telematics ingestion into GBQ via Dataflow & Scala, achieved $90K annual savings in BigQuery slot autoscaling, automated DDL for 70+ projects, and governed 20+ GCP projects.</p>
+            </div>
+          </div>
+
+          <!-- Season 1: XPO Associate -->
+          <div class="movie-card card-wide" data-modal="exp-xpo-1" data-tags="experience xpo migration netezza bigquery">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-season1"></div>
+              <div class="card-art-content">
+                <div class="episode-tag">SEASON 1 • JUNE 2020 – JUNE 2022</div>
+                <h3 class="card-title">Associate Data Engineer @ XPO</h3>
+                <p class="card-preview-text">Pune, India • Netezza to BigQuery migration (-45% cost) & 200+ table mappings</p>
+                <div class="episode-metric-chips">
+                  <span>-45% Maint. Cost</span>
+                  <span>200+ Tables</span>
+                  <span>-60% Server Load</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="exp-xpo-1">+</button>
+              </div>
+              <h4 class="hover-title">XPO — Associate Data Engineer</h4>
+              <p class="hover-desc">Migrated on-premise Netezza to Google BigQuery, built mappings for 200+ tables, and reduced Informatica server resource consumption by 60%.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control next" data-carousel="carousel-episodes" aria-label="Next">❯</button>
+      </div>
+    </section>
+
+    <!-- Row 3: ARCHITECTURE & SYSTEM DESIGN -->
+    <section class="shelf-row" id="architecture">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Architecture & System Design Deep-Dives</h2>
+        <span class="shelf-subtitle">Engineered for extreme reliability, zero data migration, and high-throughput data streams</span>
+      </div>
+      <div class="shelf-carousel-wrapper">
+        <button class="carousel-control prev" data-carousel="carousel-arch" aria-label="Previous">❮</button>
+        <div class="shelf-carousel" id="carousel-arch">
+
+          <!-- Arch 1: Client DW Connector via Secret Manager -->
+          <div class="movie-card" data-modal="arch-client-connectors" data-tags="architecture secret-manager live-connectors zero-migration">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-grid"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">DATA INTEGRATION</span>
+                <h3 class="card-title">Client Live DW Connectors</h3>
+                <p class="card-preview-text">Connects live client DWs via Secret Manager with zero data migration needed</p>
+                <div class="card-stats"><span>GCP Secret Manager</span> • <span>Zero Migration</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="arch-client-connectors">+</button>
+              </div>
+              <h4 class="hover-title">Client DW Connectors (Zero Migration)</h4>
+              <p class="hover-desc">Securely accesses client databases without replicating data onto our platform. Credentials managed via GCP Secret Manager with per-tenant isolation.</p>
+            </div>
+          </div>
+
+          <!-- Arch 2: 7-to-1 Cloud Run Consolidation -->
+          <div class="movie-card" data-modal="arch-consolidation" data-tags="architecture cloud-run microservices gcp">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-arch1"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">SYSTEM REFACTORING</span>
+                <h3 class="card-title">7-to-1 Cloud Run Consolidation</h3>
+                <p class="card-preview-text">Re-architected 7 legacy Cloud Run functions into one BigQuery-configured engine</p>
+                <div class="card-stats"><span>Zero Deploys for New Insights</span> • <span>BigQuery Tables</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="arch-consolidation">+</button>
+              </div>
+              <h4 class="hover-title">7-to-1 Microservice Consolidation</h4>
+              <p class="hover-desc">Eliminated microservice sprawl. Converted SQL queries, prompts, and schemas into BigQuery data records.</p>
+            </div>
+          </div>
+
+          <!-- Arch 3: BDP Connector Framework -->
+          <div class="movie-card" data-modal="bdp-connector" data-tags="connectors ingestion api oauth">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-connector"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">DATA INGESTION</span>
+                <h3 class="card-title">Schneider BDP Connector</h3>
+                <p class="card-preview-text">Pluggable IoT building automation connector with OAuth2 client-credential auth</p>
+                <div class="card-stats"><span>OAuth2 UAT Verified</span> • <span>EcoStruxure</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="bdp-connector">+</button>
+              </div>
+              <h4 class="hover-title">BDP Ingestion Connector</h4>
+              <p class="hover-desc">Engineered connector for Schneider Electric EcoStruxure Building Platform with JSON-aware schema mapping.</p>
+            </div>
+          </div>
+
+          <!-- Arch 4: Python DDL & Metadata Automation -->
+          <div class="movie-card" data-modal="arch-metadata-automation" data-tags="architecture python automation bigquery">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-arch4"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">DEV AUTOMATION</span>
+                <h3 class="card-title">DDL & Metadata Automation</h3>
+                <p class="card-preview-text">Auto-generates schemas & column object mappings across 70+ projects</p>
+                <div class="card-stats"><span>350+ Objects</span> • <span>40+ Hours Saved/Mo</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="arch-metadata-automation">+</button>
+              </div>
+              <h4 class="hover-title">DDL & Metadata Automation</h4>
+              <p class="hover-desc">Reusable Python automation scripts adopted company-wide for metadata extraction, datatype mappings, and DDL generation.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control next" data-carousel="carousel-arch" aria-label="Next">❯</button>
+      </div>
+    </section>
+
+    <!-- Row 4: INTERACTIVE AI STUDIO PLAYGROUND -->
+    <section class="shelf-row ai-lab-section" id="ai-lab">
+      <div class="shelf-header">
+        <h2 class="shelf-title">🧪 The AI Studio: Interactive Insights & NL2SQL Simulator</h2>
+        <span class="shelf-subtitle">Experience how Kishan uses Vertex AI & LLMs in production to build features and automate analytics</span>
+      </div>
+
+      <div class="ai-studio-container">
+        <div class="studio-sidebar">
+          <h3>Select AI Module / Prompt</h3>
+          <p class="studio-hint">Simulate real-world queries against Kishan's config-driven AI Insights Engine:</p>
+          
+          <div class="prompt-presets">
+            <button class="preset-btn active" data-preset="tenant-churn">
+              <span class="preset-icon">🏢</span>
+              <div class="preset-info">
+                <strong>Tenant Renewal Scoring</strong>
+                <span>Predict churn risk & identify expansion</span>
+              </div>
+            </button>
+
+            <button class="preset-btn" data-preset="rfm-revenue">
+              <span class="preset-icon">💰</span>
+              <div class="preset-info">
+                <strong>RFM Revenue Segmentation</strong>
+                <span>Recency, Frequency, Monetary anomaly detector</span>
+              </div>
+            </button>
+
+            <button class="preset-btn" data-preset="nl2sql">
+              <span class="preset-icon">⚡</span>
+              <div class="preset-info">
+                <strong>NL2SQL Engine</strong>
+                <span>Convert natural language to BigQuery SQL</span>
+              </div>
+            </button>
+
+            <button class="preset-btn" data-preset="bdp-iot">
+              <span class="preset-icon">🌡️</span>
+              <div class="preset-info">
+                <strong>BDP Smart Building Anomaly</strong>
+                <span>EcoStruxure HVAC & energy consumption</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="model-settings-box">
+            <div class="setting-row">
+              <span>Provider LLM:</span>
+              <span class="badge-tech">Gemini 1.5 Pro (Vertex AI)</span>
+            </div>
+            <div class="setting-row">
+              <span>Output Format:</span>
+              <span class="badge-tech">Structured JSON Schema</span>
+            </div>
+            <div class="setting-row">
+              <span>Config Source:</span>
+              <span class="badge-tech">BigQuery: insights_prompts</span>
+            </div>
+          </div>
+
+          <button id="btn-run-simulation" class="btn-run-ai">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Execute /generate_insights</span>
+          </button>
+        </div>
+
+        <div class="studio-workspace">
+          <div class="workspace-tabs">
+            <button class="tab-btn active" data-tab="preview">Dashboard Preview (12-Col Grid)</button>
+            <button class="tab-btn" data-tab="json">Raw JSON Schema Output</button>
+            <button class="tab-btn" data-tab="architecture">Execution Trace</button>
+          </div>
+
+          <div class="workspace-tab-content active" id="tab-preview">
+            <div class="live-grid-display" id="simulator-output-grid">
+              <div class="grid-loading-placeholder hidden" id="grid-loader">
+                <div class="spinner"></div>
+                <p>Calling provider-agnostic call_llm() via Vertex AI...</p>
+                <span class="trace-step">Querying BigQuery insights_queries &rarr; Validating Schema &rarr; Synthesizing</span>
+              </div>
+              <div class="rendered-cards-container" id="rendered-cards"></div>
+            </div>
+          </div>
+
+          <div class="workspace-tab-content" id="tab-json">
+            <pre class="code-terminal"><code id="code-json-output">// Executing /generate_insights endpoint...
+// BigQuery-driven schema output will appear here.</code></pre>
+          </div>
+
+          <div class="workspace-tab-content" id="tab-architecture">
+            <div class="trace-flow">
+              <div class="trace-node"><span class="step-num">1</span> Client Request (Angular / UI) &rarr; /generate_insights with portfolio_id</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">2</span> Auth Check: BigQuery insights_api_keys validation</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">3</span> Dynamic Config Load: queries, prompts & response_schema from BigQuery</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">4</span> Data Retrieval: Direct query against Client DW (Secret Manager) or BigQuery</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">5</span> call_llm() Provider-Agnostic Gemini Vertex AI with JSON Schema Enforcement</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">6</span> Persistence: Saved to BigQuery insights_results (Historical by-date audit)</div>
+              <div class="trace-arrow">&darr;</div>
+              <div class="trace-node"><span class="step-num">7</span> Frontend 12-Column Grid Renderer (Looker Studio equivalent)</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. DEDICATED EDUCATION SECTION (HIGHLIGHTING TIER-1 IIIT HYDERABAD)
+         ========================================================================= -->
+    <section class="shelf-row education-section" id="education">
+      <div class="shelf-header">
+        <h2 class="shelf-title">🎓 Academic Pedigree & Honors</h2>
+        <span class="shelf-subtitle">Graduated from premier research institutes with honors and national merit recognitions</span>
+      </div>
+
+      <div class="education-grid">
+        <!-- Card 1: IIIT Hyderabad (Tier 1 Featured) -->
+        <div class="edu-card edu-featured" data-modal="edu-iiit">
+          <div class="edu-featured-badge">🏆 DEAN'S MERIT LIST • IIIT HYDERABAD</div>
+          <div class="edu-header">
+            <div class="edu-logo-box">IIIT-H</div>
+            <div>
+              <h3 class="edu-institution">International Institute of Information Technology (IIIT), Hyderabad</h3>
+              <p class="edu-degree">Master of Technology (M.Tech) in Computer Science & Engineering</p>
+              <div class="edu-meta-pills">
+                <span class="pill-gold">CGPA: 8.09 / 10</span>
+                <span class="pill-honor">🏆 Selected in Dean's Merit List (2018–2019)</span>
+                <span class="pill-date">July 2018 – May 2020 • Hyderabad, India</span>
+              </div>
+            </div>
+          </div>
+          <p class="edu-description">
+            IIIT Hyderabad is internationally renowned for Computer Science, Artificial Intelligence, and Systems research in India. Admissions are highly selective. Selected for the prestigious <strong>Dean's Merit List</strong> for exceptional academic standing.
+          </p>
+          
+          <!-- Teaching Assistant (TA) Appointments -->
+          <div class="edu-ta-box">
+            <div class="ta-badge-header">
+              <span class="ta-icon">👨‍🏫</span>
+              <div>
+                <h4 class="ta-title">Teaching Assistant (TA) Appointments at IIIT Hyderabad</h4>
+                <span class="ta-subtitle">Appointed by Faculty for Academic Distinction & Subject Mastery in Core Computer Science</span>
+              </div>
+            </div>
+            <div class="ta-courses-grid">
+              <div class="ta-course-card">
+                <div class="ta-course-name">📐 Discrete Mathematics & Algorithms</div>
+                <p class="ta-course-desc">Mentored undergraduate and postgraduate cohorts in algorithm design, asymptotic computational complexity, graph theory, dynamic programming, and combinatorics. Conducted weekly tutorial problem-solving sessions and evaluated algorithmic assessments.</p>
+              </div>
+              <div class="ta-course-card">
+                <div class="ta-course-name">🧠 Neural Cognitive Science</div>
+                <p class="ta-course-desc">Facilitated advanced coursework bridging computational neuroscience, neural representations, and cognitive models. Mentored graduate student projects and evaluated mathematical models of cognitive perception.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-coursework-box">
+            <strong>Advanced Core Coursework:</strong>
+            <div class="coursework-tags">
+              <span>Statistical Methods in AI</span>
+              <span>Data Structures & Advanced Algorithms</span>
+              <span>Advanced Database Management Systems (DBMS)</span>
+              <span>Distributed Operating Systems</span>
+              <span>Computer Systems Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: MITS Gwalior -->
+        <div class="edu-card" data-modal="edu-mits">
+          <div class="edu-header">
+            <div class="edu-logo-box">MITS</div>
+            <div>
+              <h3 class="edu-institution">Madhav Institute of Technology & Science (MITS), Gwalior</h3>
+              <p class="edu-degree">Bachelor of Engineering (B.E) in Information Technology</p>
+              <div class="edu-meta-pills">
+                <span class="pill-gold">CGPA: 8.62 / 10</span>
+                <span class="pill-date">July 2014 – May 2018 • Gwalior, India</span>
+              </div>
+            </div>
+          </div>
+          <p class="edu-description">
+            Graduated with high honors. Built foundational software engineering expertise across relational databases, object-oriented systems (C++, Java), operating systems, and computer networks. Led technical symposiums and academic initiatives.
+          </p>
+        </div>
+
+        <!-- Card 3: Schooling & National Merit -->
+        <div class="edu-card" data-modal="award-pm">
+          <div class="edu-header">
+            <div class="edu-logo-box">KV-1</div>
+            <div>
+              <h3 class="edu-institution">Kendriya Vidyalaya No. 1, Gwalior</h3>
+              <p class="edu-degree">Senior Secondary (Class 12th) & Secondary (Class 10th) — CBSE</p>
+              <div class="edu-meta-pills">
+                <span class="pill-gold">Class 12th: 95.4%</span>
+                <span class="pill-gold">Class 10th: 10 / 10 CGPA</span>
+                <span class="pill-honor">🇮🇳 Top 0.1% National Merit</span>
+              </div>
+            </div>
+          </div>
+          <p class="edu-description">
+            Awarded Certificate of Merit (Top 0.1% Merit List) by CBSE and a personal letter of appreciation from the <strong>HRD Minister and Prime Minister of India</strong> for outstanding national academic performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 6: CORE DATA ENGINEERING ARSENAL & TECH STACK -->
+    <section class="shelf-row" id="tech-stack">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Data Engineering Arsenal & Production Tech Stack</h2>
+        <span class="shelf-subtitle">Expert in Python, SQL, Google Cloud Dataflow, Datastreams, BigQuery, and distributed computing</span>
+      </div>
+
+      <div class="tech-stack-matrix">
+        <div class="tech-category-box">
+          <div class="cat-header"><span class="cat-icon">☁️</span> Google Cloud Platform</div>
+          <ul class="tech-pills-list">
+            <li><span class="pill-title">Google BigQuery</span><span class="pill-sub">Slot autoscaling, DDL, partitioning, clustering</span></li>
+            <li><span class="pill-title">GCP Dataflow & Datastreams</span><span class="pill-sub">Batch & real-time streaming, CDC pipelines</span></li>
+            <li><span class="pill-title">GCP Secret Manager</span><span class="pill-sub">Secure credentials for live client DWs</span></li>
+            <li><span class="pill-title">GCP Cloud Run & Functions</span><span class="pill-sub">Serverless container microservices</span></li>
+            <li><span class="pill-title">Vertex AI</span><span class="pill-sub">LLM APIs, prompt engineering, schema JSON</span></li>
+            <li><span class="pill-title">IAM & Governance</span><span class="pill-sub">Policy Tags, Data Catalog, row/column security</span></li>
+          </ul>
+        </div>
+
+        <div class="tech-category-box">
+          <div class="cat-header"><span class="cat-icon">⚡</span> Data Engineering & Pipelines</div>
+          <ul class="tech-pills-list">
+            <li><span class="pill-title">End-to-End ETL / ELT</span><span class="pill-sub">100+ low-latency, fault-tolerant pipelines</span></li>
+            <li><span class="pill-title">TB-Scale Data Processing</span><span class="pill-sub">Handling terabytes of batch & stream events</span></li>
+            <li><span class="pill-title">Apache Airflow</span><span class="pill-sub">DAG authoring, SLA alerting, scheduling</span></li>
+            <li><span class="pill-title">PySpark</span><span class="pill-sub">Large-scale distributed cluster processing</span></li>
+            <li><span class="pill-title">Informatica / IICS</span><span class="pill-sub">Enterprise transformation & mappings</span></li>
+            <li><span class="pill-title">Docker & Kubernetes</span><span class="pill-sub">Containerized data services & autoscaling</span></li>
+          </ul>
+        </div>
+
+        <div class="tech-category-box">
+          <div class="cat-header"><span class="cat-icon">💻</span> Languages & AI Frameworks</div>
+          <ul class="tech-pills-list">
+            <li><span class="pill-title">Python (Expert)</span><span class="pill-sub">Flask, Pandas, NumPy, multiprocessing, async</span></li>
+            <li><span class="pill-title">SQL (Expert)</span><span class="pill-sub">Analytical queries, AST parsing, cost optimization</span></li>
+            <li><span class="pill-title">Scala & Java</span><span class="pill-sub">High-throughput streaming engines (Dataflow/Beam)</span></li>
+            <li><span class="pill-title">Large Language Models</span><span class="pill-sub">NL2SQL, prompt engineering, RLHF fine-tuning</span></li>
+            <li><span class="pill-title">JavaScript / CSS Grid</span><span class="pill-sub">12-column dynamic BI dashboard builder</span></li>
+            <li><span class="pill-title">C++ & Bash</span><span class="pill-sub">System automation, CLI tools, POSIX calls</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 7: FOUNDATIONAL & ACADEMIC PROJECTS (MOVED BELOW AS REQUESTED) -->
+    <section class="shelf-row" id="academic-projects">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Academic & Foundational Projects (College / Research Archive)</h2>
+        <span class="shelf-subtitle">Early research, system programming, NLP, and web applications</span>
+      </div>
+      <div class="shelf-carousel-wrapper">
+        <button class="carousel-control prev" data-carousel="carousel-academic" aria-label="Previous">❮</button>
+        <div class="shelf-carousel" id="carousel-academic">
+
+          <!-- 1. GoldFinch Project -->
+          <div class="movie-card" data-modal="goldfinch" data-tags="academic ai rlhf python sql model-training">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-goldfinch"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">RESEARCH & RLHF</span>
+                <h3 class="card-title">GoldFinch Project</h3>
+                <p class="card-preview-text">Authored SQL queries & facilitated RLHF human feedback loops for training LLMs</p>
+                <div class="card-stats"><span>Reinforcement Learning</span> • <span>Domain Expert</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="goldfinch">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">GoldFinch Project</h4>
+              <div class="hover-meta"><span class="match-score">96% Match</span><span class="tech-pill">SQL & Python</span></div>
+              <p class="hover-desc">Trained state-of-the-art LLMs for AI-driven user request processing via human-in-the-loop reinforcement feedback.</p>
+              <div class="hover-tags"><span>RLHF</span><span>LLMs</span><span>SQL</span></div>
+            </div>
+          </div>
+
+          <!-- 2. MetroSafe Tweet Tracker -->
+          <div class="movie-card" data-modal="metro-safe" data-tags="academic python flask nlp tweepy real-time">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-pm"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">REAL-TIME NLP</span>
+                <h3 class="card-title">MetroSafe Tweet Tracker</h3>
+                <p class="card-preview-text">Real-time social media analytics to detect riot-prone & vulnerable metropolitan regions</p>
+                <div class="card-stats"><span>Tweepy</span> • <span>Flask App</span> • <span>Geotagged NLP</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="metro-safe">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">MetroSafe Tweet Tracker</h4>
+              <div class="hover-meta"><span class="match-score">97% Match</span><span class="tech-pill">NLP & Flask</span></div>
+              <p class="hover-desc">Analyzed live geotagged Twitter feeds using NLP sentiment and threat classification, visualizing high-risk urban hotspots on a Flask dashboard.</p>
+              <div class="hover-tags"><span>NLP</span><span>Flask</span><span>Python</span><span>Tweepy</span></div>
+            </div>
+          </div>
+
+          <!-- 3. Terminal File Explorer -->
+          <div class="movie-card" data-modal="terminal-explorer" data-tags="academic c++ systems linux file-explorer">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-arch1"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">SYSTEMS PROGRAMMING</span>
+                <h3 class="card-title">Terminal File Explorer</h3>
+                <p class="card-preview-text">High-performance C++ CLI file manager with normal & command navigation modes</p>
+                <div class="card-stats"><span>C++</span> • <span>POSIX / Linux</span> • <span>Dual Modes</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="terminal-explorer">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">Terminal File Explorer</h4>
+              <div class="hover-meta"><span class="match-score">95% Match</span><span class="tech-pill">C++ Systems</span></div>
+              <p class="hover-desc">Engineered a terminal file explorer supporting directory navigation, recursive search, copy, move, and batch delete in normal and command modes.</p>
+              <div class="hover-tags"><span>C++</span><span>POSIX</span><span>File Ops</span></div>
+            </div>
+          </div>
+
+          <!-- 4. Dig In! Food Ordering App -->
+          <div class="movie-card" data-modal="dig-in" data-tags="academic flask sqlite html css javascript web">
+            <div class="card-media">
+              <div class="card-bg-gradient gradient-connector"></div>
+              <div class="card-art-content">
+                <span class="card-category-tag">FULL-STACK APP</span>
+                <h3 class="card-title">Dig In! Ordering Platform</h3>
+                <p class="card-preview-text">Responsive food ordering web application with SQLite3 database & dynamic UI</p>
+                <div class="card-stats"><span>Flask</span> • <span>SQLite3</span> • <span>JavaScript</span></div>
+              </div>
+            </div>
+            <div class="card-hover-panel">
+              <div class="hover-actions">
+                <button class="hover-btn btn-round-play">▶</button>
+                <button class="hover-btn btn-round-add" data-item-id="dig-in">+</button>
+                <button class="hover-btn btn-round-like">👍</button>
+              </div>
+              <h4 class="hover-title">Dig In! Web Application</h4>
+              <div class="hover-meta"><span class="match-score">94% Match</span><span class="tech-pill">Flask & SQLite3</span></div>
+              <p class="hover-desc">Full-stack web application featuring menu browsing, cart management, checkout flows, and relational SQLite3 order tracking.</p>
+              <div class="hover-tags"><span>Flask</span><span>SQLite3</span><span>Bootstrap</span></div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control next" data-carousel="carousel-academic" aria-label="Next">❯</button>
+      </div>
+    </section>
+
+    <!-- Row 8: HOBBIES & PERSONAL INTERESTS -->
+    <section class="shelf-row" id="hobbies">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Beyond the Terminal: Hobbies & Passions</h2>
+        <span class="shelf-subtitle">What drives, inspires, and recharges Kishan outside engineering</span>
+      </div>
+
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon-box">📖</div>
+          <div class="hobby-content">
+            <h4>Reading Tech & AI Advancements</h4>
+            <p>Constantly exploring arXiv preprints, LLM papers, distributed computing blogs, and systems engineering breakthroughs.</p>
+          </div>
+        </div>
+
+
+        <div class="hobby-card">
+          <div class="hobby-icon-box">🏏</div>
+          <div class="hobby-content">
+            <h4>Cricket Enthusiast</h4>
+            <p>Playing weekend matches and following tactical cricket strategies, team analytics, and championship tournaments.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon-box">📈</div>
+          <div class="hobby-content">
+            <h4>Stock Market & Investments</h4>
+            <p>Active investor analyzing market trends, business fundamentals, valuation models, and long-term quantitative portfolios.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon-box">✈️</div>
+          <div class="hobby-content">
+            <h4>Travelling & Exploring</h4>
+            <p>Exploring diverse cultures, scenic landscapes, hiking trails, and embarking on impromptu road trips across India and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 9: MY LIST SECTION (BOOKMARKS) -->
+    <section class="shelf-row my-list-row" id="my-list-section">
+      <div class="shelf-header">
+        <h2 class="shelf-title">My List (Your Saved Queue)</h2>
+        <span class="shelf-subtitle">Click the "+" icon on any card to bookmark projects for review</span>
+      </div>
+      <div class="my-list-grid" id="my-list-items-container">
+        <div class="empty-list-message" id="empty-list-notice">
+          <p>Your list is currently empty. Click the <strong>+</strong> button on any project or episode to save it here!</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       4. INTERACTIVE AVATAR COMPANION WITH TYPEWRITER Q&A + SUGGESTIONS
+       ========================================================================= -->
+  <div class="game-avatar-dock" id="avatar-dock">
+    
+    <!-- Game Speech Cloud (Dialogue Bubble with Live Q&A Input) -->
+    <div class="game-speech-cloud minimized" id="game-speech-cloud">
+      <div class="cloud-header">
+        <div class="cloud-status">
+          <span class="status-dot"></span>
+          <span class="status-name">Kishan Singhal</span>
+          <span class="status-role">• IIIT-H Alumni • Senior DE</span>
+        </div>
+        <button class="cloud-close-btn" id="btn-cloud-minimize" title="Minimize Speech Cloud">✕</button>
+      </div>
+
+      <!-- Dialogue text response area -->
+      <div class="cloud-body">
+        <div class="cloud-speech-text" id="avatar-dialogue-text">
+          Hey there! I'm Kishan Shankar Singhal. Ask me any question about my background, IIIT Hyderabad, BigQuery pipelines, or live DW connectors! 🍿
+        </div>
+        <span class="typewriter-cursor">|</span>
+      </div>
+
+      <!-- Live User Question Input Form -->
+      <form id="avatar-qa-form" class="avatar-qa-form">
+        <div class="avatar-input-container">
+          <input type="text" id="avatar-user-input" placeholder="Ask Kishan anything from resume..." autocomplete="off">
+          <button type="submit" id="btn-avatar-ask" title="Ask question">
+            <span>Ask</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </div>
+      </form>
+
+      <!-- Suggested Questions (Clickable chips) -->
+      <div class="avatar-suggestions-box">
+        <span class="suggestions-label">SUGGESTED QUESTIONS:</span>
+        <div class="suggested-chips-wrapper" id="avatar-suggested-chips">
+          <button class="suggestion-chip" data-q="What courses were you a Teaching Assistant for at IIIT Hyderabad?">👨‍🏫 IIIT-H Teaching Assistant</button>
+          <button class="suggestion-chip" data-q="Tell me about IIIT Hyderabad">🎓 IIIT Hyderabad M.Tech</button>
+          <button class="suggestion-chip" data-q="How does Data Studio connect live client DWs?">🔒 Secret Manager DW Auth</button>
+          <button class="suggestion-chip" data-q="How did you save $90K on BigQuery?">💰 $90K BigQuery Savings</button>
+          <button class="suggestion-chip" data-q="Explain your TB-scale GPS telematics pipeline">🚛 TB-Scale GPS Stream to GBQ</button>
+          <button class="suggestion-chip" data-q="What are your hobbies outside tech?">🏏 Cricket & Investments</button>
+          <button class="suggestion-chip" data-q="Download Resume PDF">📄 Download Resume PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar Character Frame -->
+    <div class="avatar-companion-frame" id="avatar-companion-btn" title="Click me to chat with Kishan!">
+      <div class="avatar-svg-container">
+        <!-- SVG Vector Character of Kishan -->
+        <svg viewBox="0 0 100 100" class="avatar-svg">
+          <circle cx="50" cy="50" r="48" fill="#181818" stroke="#E50914" stroke-width="3" />
+          <path d="M22 88 C25 65 38 60 50 60 C62 60 75 65 78 88 Z" fill="#222" />
+          <path d="M35 62 L45 88 L55 88 L65 62" fill="#E50914" opacity="0.8" />
+          <polygon points="50,65 46,75 54,75" fill="#fff" />
+          <ellipse cx="50" cy="42" rx="20" ry="23" fill="#D2996E" />
+          <path d="M28 35 C28 20 40 16 52 16 C66 16 72 23 72 35 C68 28 58 26 50 26 C40 26 33 30 28 35 Z" fill="#111" />
+          <path d="M36 34 Q42 32 45 35" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round" />
+          <path d="M64 34 Q58 32 55 35" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round" />
+          <ellipse cx="41" cy="40" rx="3" ry="2.5" fill="#111" class="avatar-eye" />
+          <ellipse cx="59" cy="40" rx="3" ry="2.5" fill="#111" class="avatar-eye" />
+          <rect x="33" y="34" width="15" height="12" rx="3" fill="none" stroke="#222" stroke-width="2.2" />
+          <rect x="52" y="34" width="15" height="12" rx="3" fill="none" stroke="#222" stroke-width="2.2" />
+          <line x1="48" y1="39" x2="52" y2="39" stroke="#222" stroke-width="2" />
+          <path d="M43 51 Q50 56 57 51" stroke="#5c2c16" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <circle cx="50" cy="78" r="4" fill="#00FF66" class="avatar-pulse-light" />
+        </svg>
+      </div>
+
+      <div class="avatar-bubble-ping" title="Click to chat!">
+        <span>💬</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================================================================
+       5. NETFLIX DETAIL MODAL
+       ========================================================================= -->
+  <div class="netflix-modal-backdrop hidden" id="detail-modal-backdrop">
+    <div class="netflix-modal" id="detail-modal">
+      <button class="modal-close-btn" id="btn-modal-close" aria-label="Close modal">✕</button>
+
+      <div class="modal-banner" id="modal-banner">
+        <div class="modal-banner-gradient"></div>
+        <div class="modal-banner-content">
+          <h2 class="modal-title" id="modal-title">Title Here</h2>
+          <div class="modal-meta-row" id="modal-meta"></div>
+          <div class="modal-cta-row">
+            <button class="btn btn-play" id="btn-modal-primary-action">
+              <span>Try Live Demo</span>
+            </button>
+            <button class="btn btn-icon-round" id="btn-modal-bookmark">
+              <span>+</span>
+            </button>
+            <a href="Kishan_Singhal_DE.pdf" target="_blank" download class="btn btn-info">
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-tabs">
+          <button class="modal-tab active" data-modaltab="overview">Overview</button>
+          <button class="modal-tab" data-modaltab="architecture">Architecture & System Design</button>
+          <button class="modal-tab" data-modaltab="metrics">Key ROI & Metrics</button>
+          <button class="modal-tab" data-modaltab="code">Code / Schemas</button>
+        </div>
+
+        <div class="modal-tab-pane active" id="pane-overview">
+          <p id="modal-desc" class="modal-long-desc"></p>
+          <div class="modal-highlights-box" id="modal-highlights"></div>
+        </div>
+
+        <div class="modal-tab-pane" id="pane-architecture">
+          <div class="arch-diagram-wrapper" id="modal-arch-diagram"></div>
+        </div>
+
+        <div class="modal-tab-pane" id="pane-metrics">
+          <div class="metrics-grid" id="modal-metrics-grid"></div>
+        </div>
+
+        <div class="modal-tab-pane" id="pane-code">
+          <pre class="code-terminal"><code id="modal-code-snippet"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       6. FOOTER
+       ========================================================================= -->
+  <footer class="netflix-footer">
+    <div class="footer-inner">
+      <div class="footer-contact-row">
+        <span>Questions? Call or Connect:</span>
+        <a href="tel:+918871207064">(+91) 8871207064</a>
+        <a href="mailto:singhal.kishan.11@gmail.com">singhal.kishan.11@gmail.com</a>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <a href="https://linkedin.com/in/kishan-shankar-singhal" target="_blank" rel="noopener">LinkedIn Profile</a>
+          <a href="https://github.com/kishan811" target="_blank" rel="noopener">GitHub (@kishan811)</a>
+          <a href="Kishan_Singhal_DE.pdf" target="_blank">Download Resume PDF</a>
+        </div>
+        <div class="footer-col">
+          <a href="#work-projects">Production Work Projects</a>
+          <a href="#education">IIIT Hyderabad Education</a>
+          <a href="#ai-lab">AI Studio Simulator</a>
+        </div>
+        <div class="footer-col">
+          <a href="#episodes">Career Seasons</a>
+          <a href="#academic-projects">Academic Archive</a>
+          <a href="#hobbies">Hobbies & Passions</a>
+        </div>
+        <div class="footer-col">
+          <span>Location: Pune, India</span>
+          <span>Education: IIIT Hyderabad (M.Tech CSE • Dean's Merit List)</span>
+          <span>Google Certified Professional Data Engineer</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kishan Shankar Singhal • AI & Data Platforms. Designed with cinematic Netflix UI aesthetics & interactive AI companion.</p>
+        <p class="service-code">SERVICE CODE: IIIT-H-BIGQUERY-DATAFLOW-SECRET-MANAGER-2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
